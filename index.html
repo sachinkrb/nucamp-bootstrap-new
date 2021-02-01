@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
@@ -36,27 +36,25 @@
 <body>
 
     <header class="jumbotron jumbotron-fluid">
-        <div>
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                        <img src="img/logo.png" class="img-fluid" />
-                    </div>
-                    <div class="col">
-                        <h1>NuCamp</h1>
-                        <h2>a better way to camp</h2>
-                    </div>
-                    <div class="col-md-4 col-xl-2  mt-4">
-                        <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip"
-                            data-placement="bottom" data-html="true"
-                            title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1 class="display-3">NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+                <div class="col-md-4 col-xl-2  mt-4">
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-secondary" data-toggle="tooltip"
+                        data-placement="bottom" data-html="true"
+                        title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
+        </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
@@ -77,11 +75,16 @@
                                     class="fa fa-address-card fa-lg"></i> Contact
                             </a></li>
                     </ul>
+
                     <span class="navbar-text ml-auto">
                         <a role="button" data-toggle="modal" data-target="#loginModal" href="">
                             <i class="fa fa-sign-in"></i>Login
                         </a>
                     </span>
+                    <form class=" ml-auto form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
         </div>
     </nav>
@@ -227,8 +230,8 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-6 mx-auto">
+        <div class="row row-content-2 align-items-center">
+            <div class="col-sm-12 mx-auto">
                 <div class="card">
                     <h3 class="card-header bg-info text-white"> Reserve a Campsite </h3>
                     <div class="card-body">
